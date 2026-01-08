@@ -37,6 +37,7 @@ body {
 
 .logo {
   height: 70px; /* أكبر قليلاً */
+  width: 120px; 
 }
 
 /* Buttons */
