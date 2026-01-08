@@ -122,7 +122,7 @@ function afterLogin(user) {
     <li onclick="showSection('exams')">الاختبارات</li>
     <li onclick="showSection('leaderboard')">الصدارة</li>
     <li onclick="showSection('profile')">الحساب</li>
-   <li onclick="showSection('contact')">تواصل معنا</li> 
+    <li onclick="showSection('contact')">تواصل معنا</li> 
   `;
   profileData.innerHTML = `
     الاسم: ${user.name}<br>
