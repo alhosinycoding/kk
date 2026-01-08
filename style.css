@@ -36,7 +36,7 @@ body {
 }
 
 .logo {
-  height: 100px; /* أكبر قليلاً */
+  height: 70px; /* أكبر قليلاً */
 }
 
 /* Buttons */
@@ -107,7 +107,9 @@ button {
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   cursor: pointer;
+  color: #000; /* ← هنا */
 }
+
 
 .card i {
   font-size: 30px;
