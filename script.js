@@ -1,6 +1,83 @@
 const users = [
-  { username: "student1", password: "1234", name: "طالب 1", rank: 1, group: "A" }
+  {
+    username: "يحيى حسين",
+    password: "Yehia@2026",
+    name: "يحيى حسين",
+    rank: 2,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "مروان حسن",
+    password: "Marwan@2026",
+    name: "مروان حسن",
+    rank: 3,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "مروان طاهر",
+    password: "Taher@2026",
+    name: "مروان طاهر",
+    rank: 4,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "سارة محمد",
+    password: "Sara@2026",
+    name: "سارة محمد",
+    rank: 5,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "مستر محمد",
+    password: "Admin@2026",
+    name: "مستر محمد",
+    rank: 0,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "رؤي السعدي",
+    password: "Roya@2026",
+    name: "رؤي السعدي",
+    rank: 6,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "مروان حسن محمد",
+    password: "MarwanH@2026",
+    name: "مروان حسن محمد",
+    rank: 7,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "ملك وليد",
+    password: "Malak@2026",
+    name: "ملك وليد",
+    rank: 8,
+    group: "الاثنين"
+  },
+  {
+    username: "عبدالله محمد",
+    password: "Abdallah@2026",
+    name: "عبدالله محمد",
+    rank: 9,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "يحيى احمد",
+    password: "YehiaA@2026",
+    name: "يحيى احمد",
+    rank: 10,
+    group: "الجمعة الساعة 3 العصر"
+  },
+  {
+    username: "بسمله احمد",
+    password: "Basmla@2026",
+    name: "بسمله احمد",
+    rank: 11,
+    group: "الجمعة الساعة 3 العصر"
+  }
 ];
+
 
 const sidebar = document.getElementById("sidebar");
 const menuBtn = document.getElementById("menuBtn");
