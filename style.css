@@ -26,7 +26,7 @@ body {
   top: 10px;
   right: 10px;
   left: 10px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,15 +36,27 @@ body {
 }
 
 .logo {
-  height: 40px;
+  height: 60px; /* أكبر قليلاً */
 }
 
+/* Buttons */
 button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: var(--main);
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 16px;
+}
+
+.examBtn {
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.logoutBtn, .backBtn {
+  margin-top: 15px;
+  font-size: 16px;
 }
 
 /* Sidebar */
