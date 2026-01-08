@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>منصة الشهد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+    <div class="logo">الشهد</div>
+    <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar" id="sidebar">
+    <ul id="menuItems">
+      <li onclick="showSection('login')">تسجيل الدخول</li>
+      <li onclick="showSection('contact')">تواصل معنا</li>
+    </ul>
+  </aside>
+
+  <!-- ===== Toast ===== -->
+  <div id="toast"></div>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+
+    <!-- Landing -->
+    <section id="landing" class="section active">
+      <div class="hero">
+        <h1>مرحبًا بك في منصة الشهد</h1>
+        <p>منصة تعليمية متخصصة في اللغة العربية – ثانوي عام</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>الشهد – اللغة العربية</h3>
+          <p>حصص • اختبارات • متابعة</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login -->
+    <section id="login" class="section">
+      <h2>تسجيل الدخول</h2>
+      <input type="text" id="username" placeholder="اسم المستخدم">
+      <input type="password" id="password" placeholder="كلمة المرور">
+      <button onclick="login()">تسجيل الدخول</button>
+      <p class="whatsapp" onclick="openWhatsApp()">تواصل مع المستر</p>
+    </section>
+
+    <!-- Lessons -->
+    <section id="lessons" class="section">
+      <h2>الحصص</h2>
+      <button onclick="openLesson()">الحصة الأولى</button>
+      <div id="videoBox"></div>
+    </section>
+
+    <!-- Exams -->
+    <section id="exams" class="section">
+      <h2>الاختبارات</h2>
+      <a href="https://forms.microsoft.com" target="_blank">اختبار الوحدة الأولى</a>
+    </section>
+
+    <!-- Leaderboard -->
+    <section id="leaderboard" class="section">
+      <h2>لوحة الصدارة</h2>
+      <ol id="leaders"></ol>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="section">
+      <h2>الحساب</h2>
+      <p id="profileName"></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>تواصل معنا</h2>
+      <div class="social">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
