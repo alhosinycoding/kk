@@ -25,6 +25,7 @@
 <!-- ===== Sidebar ===== -->
 <aside class="sidebar" id="sidebar">
   <ul id="menuItems">
+    <li onclick="showSection('landing')">الرئيسية</li>
     <li onclick="showSection('login')">تسجيل الدخول</li>
     <li onclick="showSection('contact')">تواصل معنا</li>
   </ul>
@@ -82,20 +83,25 @@
 <section id="lessons" class="section">
   <h2>الحصص</h2>
 
-  <div class="cards">
-    <div class="card" onclick="openLesson()">
+  <div class="cards" id="lessonsCards">
+    <div class="card" onclick="openLesson('VIDEO_ID_1')">
       <i class="fa-solid fa-play"></i>
       <h3>الحصة الأولى</h3>
+    </div>
+    <div class="card" onclick="openLesson('VIDEO_ID_2')">
+      <i class="fa-solid fa-play"></i>
+      <h3>الحصة الثانية</h3>
     </div>
   </div>
 
   <div id="videoBox"></div>
+  <button onclick="backToLessons()" class="backBtn">العودة للحصص</button>
 </section>
 
 <!-- ===== Exams ===== -->
 <section id="exams" class="section">
   <h2>الاختبارات</h2>
-  <button onclick="openExam()">بدء الامتحان</button>
+  <button onclick="openExam()" class="examBtn">بدء الامتحان</button>
 </section>
 
 <!-- ===== Leaderboard ===== -->
@@ -108,6 +114,7 @@
 <section id="profile" class="section">
   <h2>الحساب</h2>
   <p id="profileData"></p>
+  <button onclick="logout()" class="logoutBtn">تسجيل الخروج</button>
 </section>
 
 <!-- ===== Contact ===== -->
