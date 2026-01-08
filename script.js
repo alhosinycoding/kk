@@ -160,24 +160,32 @@ function backToLessons() {
 
 /* الاختبارات */
 const exams = [
-  {
-    title: "اختبار الحصة الأولى",
-    link: "https://forms.microsoft.com/FORM_LINK_1"
-  },
-  {
-    title: "اختبار الحصة الثانية",
-    link: "https://forms.microsoft.com/FORM_LINK_2"
-  },
-  {
-    title: "اختبار شامل",
-    link: "https://forms.microsoft.com/FORM_LINK_3"
-  }
+  { title: "اختبار الحصة الأولى", link: "https://forms.microsoft.com/FORM_LINK_1" },
+  { title: "اختبار الحصة الثانية", link: "https://forms.microsoft.com/FORM_LINK_2" },
+  { title: "اختبار شامل", link: "https://forms.microsoft.com/FORM_LINK_3" }
 ];
 
+// دالة فتح الاختبار
 function openExam(index) {
   toast("بالتوفيق في الامتحان ✨");
   window.open(exams[index].link, "_blank");
 }
+
+// دالة توليد كروت الاختبارات
+function loadExams() {
+  const container = document.getElementById("examCards");
+  container.innerHTML = ""; // مسح أي محتوى قديم
+
+  exams.forEach((exam, index) => {
+    container.innerHTML += `
+      <div class="card" onclick="openExam(${index})">
+        <i class="fa-solid fa-file-circle-check"></i>
+        <h3>${exam.title}</h3>
+      </div>
+    `;
+  });
+}
+
 
 
 /* لوحة الصدارة */
