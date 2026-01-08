@@ -117,14 +117,17 @@ button {
   color: var(--main);
 }
 
-/* Toast */
+/* Toast جديد أسفل الصفحة */
 #toast {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 20px;       /* بعد 20px من أسفل الصفحة */
+  left: 50%;           /* في منتصف الشاشة أفقيًا */
+  transform: translateX(-50%); /* لمركزة الزر */
   background: var(--main);
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
   display: none;
+  z-index: 1000;       /* فوق كل العناصر */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
