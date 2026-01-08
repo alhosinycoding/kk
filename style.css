@@ -1,0 +1,122 @@
+:root {
+  --main: #ff9800;
+  --second: #ffd54f;
+  --bg: #ffffff;
+  --text: #000;
+}
+
+body.dark {
+  --bg: #000;
+  --text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: var(--main);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  display: none;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: var(--second);
+  padding: 30px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Inputs */
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+}
+
+/* Toast */
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--main);
+  color: #fff;
+  padding: 10px 20px;
+  display: none;
+  border-radius: 10px;
+}
