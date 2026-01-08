@@ -3,6 +3,11 @@ const users = [
 ];
 
 const sidebar = document.getElementById("sidebar");
+const menuBtn = document.getElementById("menuBtn");
+const themeToggle = document.getElementById("themeToggle");
+const menuItems = document.getElementById("menuItems");
+const profileData = document.getElementById("profileData");
+const videoBox = document.getElementById("videoBox");
 
 menuBtn.onclick = () => sidebar.classList.toggle("open");
 themeToggle.onclick = () => document.body.classList.toggle("dark");
@@ -49,19 +54,49 @@ function afterLogin(user) {
   `;
 }
 
+/* تسجيل خروج */
+function logout() {
+  localStorage.removeItem("user");
+  location.reload();
+}
+
 /* Restore session */
 const saved = localStorage.getItem("user");
 if (saved) afterLogin(JSON.parse(saved));
 
-function openLesson() {
+/* الحصص */
+function openLesson(videoId) {
   toast("عاش يا بطل 💪");
   videoBox.innerHTML = `
-    <iframe width="100%" height="315"
-    src="https://www.youtube.com/embed/VIDEO_ID"
+    <iframe width="100%" height="500"
+    src="https://www.youtube.com/embed/${videoId}"
     allowfullscreen></iframe>`;
+  document.getElementById("lessonsCards").style.display = "none";
+  document.querySelector(".backBtn").style.display = "inline-block";
 }
 
+function backToLessons() {
+  videoBox.innerHTML = "";
+  document.getElementById("lessonsCards").style.display = "grid";
+  document.querySelector(".backBtn").style.display = "none";
+}
+
+/* الاختبارات */
 function openExam() {
   toast("بالتوفيق في الامتحان ✨");
   window.open("https://forms.microsoft.com", "_blank");
 }
+
+/* لوحة الصدارة */
+const leaders = [
+  { name: "طالب 1", score: 95 },
+  { name: "طالب 2", score: 90 },
+  { name: "طالب 3", score: 85 }
+];
+
+const leadersList = document.getElementById("leaders");
+leaders.forEach(l => {
+  const li = document.createElement("li");
+  li.textContent = `${l.name} - ${l.score} نقطة`;
+  leadersList.appendChild(li);
+});
