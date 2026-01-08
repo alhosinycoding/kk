@@ -159,16 +159,32 @@ function backToLessons() {
 }
 
 /* الاختبارات */
-function openExam() {
+const exams = [
+  {
+    title: "اختبار الحصة الأولى",
+    link: "https://forms.microsoft.com/FORM_LINK_1"
+  },
+  {
+    title: "اختبار الحصة الثانية",
+    link: "https://forms.microsoft.com/FORM_LINK_2"
+  },
+  {
+    title: "اختبار شامل",
+    link: "https://forms.microsoft.com/FORM_LINK_3"
+  }
+];
+
+function openExam(index) {
   toast("بالتوفيق في الامتحان ✨");
-  window.open("https://forms.microsoft.com", "_blank");
+  window.open(exams[index].link, "_blank");
 }
+
 
 /* لوحة الصدارة */
 const leaders = [
-  { name: "طالب 1", score: 95 },
-  { name: "طالب 2", score: 90 },
-  { name: "طالب 3", score: 85 }
+  { name: "روئ السغدي", score: 95 },
+  { name: "سارة محمد", score: 90 },
+  { name: "مروان طاهر ", score: 85 }
 ];
 
 const leadersList = document.getElementById("leaders");
