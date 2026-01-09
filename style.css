@@ -133,25 +133,25 @@ button {
 }
 /* ===== Profile Section ===== */
 #profile {
-  display: none;                 /* يظهر بس لما نضيف .active */
-  justify-content: center;
-  align-items: center;           /* توسيط رأسي */
-  min-height: calc(100vh - 100px); /* الشاشة ناقص ارتفاع المنيو */
-  margin-top: 100px;             /* اترك مساحة للـ navbar */
+  display: none;                    /* يظهر فقط عند إضافة .active */
+  justify-content: center;          /* توسيط أفقي */
+  align-items: center;              /* توسيط عمودي */
+  min-height: calc(100vh - 100px);  /* ارتفاع الشاشة ناقص المنيو */
+  margin-top: 100px;                /* مساحة للمنيو */
   padding: 0 20px;
   direction: rtl;
   box-sizing: border-box;
 
-  position: relative; /* مهم عشان z-index يشتغل */
-  z-index: 1;         /* أقل من navbar اللي z-index:1000 */
+  position: relative;  
+  z-index: 1;                        /* أقل من navbar عشان يبقى خلفه */
 }
 
-/* Wrapper للكارد + الزر */
+/* wrapper للكارد والزر */
 .profile-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;           /* ترتيب عمودي للكارد والزر */
   align-items: center;
-  gap: 15px; /* مسافة بين الكارد والزر */
+  gap: 15px;                        /* مسافة بين الكارد والزر */
   width: 100%;
 }
 
@@ -161,7 +161,7 @@ button {
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  color: #000;           /* النص أسود ثابت */
+  color: #000;                       /* نص أسود ثابت */
   text-align: right;
   line-height: 1.6;
   max-width: 400px;
@@ -169,7 +169,7 @@ button {
   position: relative;
 }
 
-/* عنوان الحساب */
+/* عنوان الحساب داخل الكارد */
 #profileData::before {
   content: "الحساب";
   display: block;
@@ -177,10 +177,10 @@ button {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #000;
+  color: #000;                       /* نص أسود ثابت */
 }
 
-/* زر تسجيل الخروج */
+/* زر تسجيل الخروج تحت الكارد */
 .logoutBtn {
   background-color: #ff4d4d;
   color: #fff;
