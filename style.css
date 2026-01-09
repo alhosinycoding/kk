@@ -132,44 +132,48 @@ button {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* ===== Profile Card ===== */
+/* ===== Profile Section Centered Card ===== */
 #profile {
-  max-width: 400px;
-  margin: 120px auto 0 auto; /* مسافة من Navbar */
-  text-align: center;
-  direction: rtl;             /* للغة العربية */
+  display: flex;
+  justify-content: center;      /* يوسّط الكارد أفقيًا */
+  align-items: flex-start;      /* يبدأ من أعلى قليلًا */
+  min-height: 80vh;             /* يملأ 80% من ارتفاع الشاشة */
+  padding-top: 50px;            /* مسافة إضافية من الأعلى */
+  direction: rtl;               /* محاذاة عربية */
 }
 
 #profileData {
   background: #fff;          
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  color: var(--text);        /* لون النص */
-  text-align: right;         /* النص من اليمين للشمال */
+  color: var(--text);
+  text-align: right;           /* نص من اليمين للشمال */
   line-height: 1.6;
   word-wrap: break-word;
+  max-width: 400px;
+  width: 100%;
   position: relative;
 }
 
-/* وضع كلمة الحساب داخل الكارد */
+/* كلمة الحساب داخل الكارد */
 #profileData::before {
   content: "الحساب";
   display: block;
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
   color: var(--text);
 }
 
 .logoutBtn {
-  background-color: #ff4d4d;   /* أحمر للزر */
+  background-color: #ff4d4d;
   color: #fff;
   padding: 12px 25px;
   border-radius: 10px;
   font-size: 16px;
-  margin-top: 10px;           /* مسافة عن البيانات */
+  margin-top: 15px;
   cursor: pointer;
   transition: background 0.3s;
 }
