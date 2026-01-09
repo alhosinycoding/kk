@@ -131,24 +131,28 @@ button {
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
 /* ===== Profile Section Centered Card ===== */
 #profile {
+  display: none;               /* مخفي افتراضيًا */
+  justify-content: center;      /* توسيط أفقي */
+  align-items: flex-start;      /* من أعلى شوية */
+  min-height: 80vh;
+  padding-top: 50px;
+  direction: rtl;
+}
+
+/* يظهر فقط لما يكون Active */
+#profile.active {
   display: flex;
-  justify-content: center;      /* يوسّط الكارد أفقيًا */
-  align-items: flex-start;      /* يبدأ من أعلى قليلًا */
-  min-height: 80vh;             /* يملأ 80% من ارتفاع الشاشة */
-  padding-top: 50px;            /* مسافة إضافية من الأعلى */
-  direction: rtl;               /* محاذاة عربية */
 }
 
 #profileData {
-  background: #fff;          
+  background: #fff;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   color: var(--text);
-  text-align: right;           /* نص من اليمين للشمال */
+  text-align: right;
   line-height: 1.6;
   word-wrap: break-word;
   max-width: 400px;
@@ -156,7 +160,7 @@ button {
   position: relative;
 }
 
-/* كلمة الحساب داخل الكارد */
+/* عنوان الحساب */
 #profileData::before {
   content: "الحساب";
   display: block;
@@ -167,17 +171,3 @@ button {
   color: var(--text);
 }
 
-.logoutBtn {
-  background-color: #ff4d4d;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 10px;
-  font-size: 16px;
-  margin-top: 15px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.logoutBtn:hover {
-  background-color: #e60000;
-}
