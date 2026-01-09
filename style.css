@@ -132,63 +132,39 @@ button {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 /* ===== Profile Section ===== */
+
+ /* Profile Section */
 #profile {
-  display: flex;                     /* flex زي باقي الأقسام */
-  flex-direction: column;            /* ترتيب عمودي للكارد والزر */
-  align-items: center;               /* توسيط أفقي */
-  justify-content: flex-start;       /* يبدأ من أعلى شوي */
-  padding: 120px 20px;               /* نفس padding Sections الأخرى */
+  display: none;        /* يظهر فقط عند إضافة .active */
+  padding: 120px 20px;  /* نفس padding باقي Sections */
   text-align: center;
-  direction: rtl;
-  box-sizing: border-box;
 }
 
-/* wrapper للكارد والزر */
-.profile-wrapper {
-  display: flex;
-  flex-direction: column;           /* ترتيب عمودي للكارد والزر */
-  align-items: center;
-  gap: 15px;                        /* مسافة بين الكارد والزر */
-  max-width: 400px;                 /* نفس عرض الكاردس */
-  width: 100%;
+#profile.active {
+  display: block;
 }
 
-/* كارد الحساب */
 #profileData {
-  background: #fff;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  color: #000;                       /* نص أسود ثابت */
+  color: #000;          /* نص أسود ثابت حتى في Dark Mode */
   text-align: right;
   line-height: 1.6;
-  width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-/* عنوان الحساب داخل الكارد */
-#profileData::before {
-  content: "الحساب";
-  display: block;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #000;                       /* نص أسود ثابت */
-}
-
-/* زر تسجيل الخروج تحت الكارد */
+/* زر الخروج */
 .logoutBtn {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 10px;
   background-color: #ff4d4d;
   color: #fff;
-  padding: 12px 25px;
+  padding: 12px;
   border-radius: 10px;
-  font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
-  width: 100%;
+  transition: 0.3s;
 }
 
 .logoutBtn:hover {
   background-color: #e60000;
 }
+
