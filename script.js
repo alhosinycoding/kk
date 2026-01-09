@@ -51,7 +51,7 @@ const users = [
   },
   {
     username: "عبدالله محمد",
-    password: "Abdall2026ah@",
+    password: "Abdallah@2026",
     name: "عبدالله محمد",
     rank: 9,
     group: "الجمعة الساعة 3 العصر"
