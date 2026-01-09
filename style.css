@@ -132,11 +132,9 @@ button {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 /* ===== Profile Section ===== */
-
- /* Profile Section */
 #profile {
-  display: none;        /* يظهر فقط عند إضافة .active */
-  padding: 120px 20px;  /* نفس padding باقي Sections */
+  display: none;              /* يظهر فقط عند إضافة .active */
+  padding: 120px 20px;        /* نفس padding باقي Sections */
   text-align: center;
 }
 
@@ -144,27 +142,45 @@ button {
   display: block;
 }
 
-#profileData {
-  color: #000;          /* نص أسود ثابت حتى في Dark Mode */
+/* كارد الحساب */
+#profile .card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  color: #000;                /* نص أسود ثابت */
   text-align: right;
   line-height: 1.6;
-  margin-bottom: 10px;
+  max-width: 400px;           /* نفس عرض باقي الكاردات */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;                  /* مسافة بين النص والزر */
 }
 
-/* زر الخروج */
-.logoutBtn {
+/* عنوان الحساب داخل الكارد */
+#profileData::before {
+  content: "الحساب";
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;                 /* نص أسود ثابت */
+}
+
+/* زر تسجيل الخروج */
+#profile .logoutBtn {
   width: 100%;
-  max-width: 100%;
-  margin-top: 10px;
-  background-color: #ff4d4d;
-  color: #fff;
   padding: 12px;
   border-radius: 10px;
+  font-size: 16px;
+  background-color: #ff4d4d;
+  color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
-.logoutBtn:hover {
+#profile .logoutBtn:hover {
   background-color: #e60000;
 }
-
