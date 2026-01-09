@@ -41,13 +41,7 @@ const users = [
     rank: 6,
     group: "الجمعة الساعة 3 العصر"
   },
-  {
-    username: "مروان حسن محمد",
-    password: "MarwanH@2026",
-    name: "مروان حسن محمد",
-    rank: 7,
-    group: "الجمعة الساعة 3 العصر"
-  },
+  
   {
     username: "ملك وليد",
     password: "Malak@2026",
@@ -57,7 +51,7 @@ const users = [
   },
   {
     username: "عبدالله محمد",
-    password: "Abdallah@2026",
+    password: "Abdall2026ah@",
     name: "عبدالله محمد",
     rank: 9,
     group: "الجمعة الساعة 3 العصر"
