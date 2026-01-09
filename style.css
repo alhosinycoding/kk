@@ -134,16 +134,10 @@ button {
 /* ===== Profile Section ===== */
 #profile {
   display: none;                    /* يظهر فقط عند إضافة .active */
-  justify-content: center;          /* توسيط أفقي */
-  align-items: center;              /* توسيط عمودي */
-  min-height: calc(100vh - 100px);  /* ارتفاع الشاشة ناقص المنيو */
-  margin-top: 100px;                /* مساحة للمنيو */
-  padding: 0 20px;
+  padding: 120px 20px;              /* نفس الـ padding لباقي Sections */
+  text-align: center;
   direction: rtl;
   box-sizing: border-box;
-
-  position: relative;  
-  z-index: 1;                        /* أقل من navbar عشان يبقى خلفه */
 }
 
 /* wrapper للكارد والزر */
@@ -152,7 +146,8 @@ button {
   flex-direction: column;           /* ترتيب عمودي للكارد والزر */
   align-items: center;
   gap: 15px;                        /* مسافة بين الكارد والزر */
-  width: 100%;
+  max-width: 400px;                 /* نفس عرض الكاردس */
+  margin: 0 auto;                   /* توسيط الكارد في الصفحة */
 }
 
 /* كارد الحساب */
@@ -164,9 +159,8 @@ button {
   color: #000;                       /* نص أسود ثابت */
   text-align: right;
   line-height: 1.6;
-  max-width: 400px;
   width: 100%;
-  position: relative;
+  box-sizing: border-box;
 }
 
 /* عنوان الحساب داخل الكارد */
@@ -189,7 +183,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
-  max-width: 400px;
   width: 100%;
 }
 
