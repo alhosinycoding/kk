@@ -131,3 +131,35 @@ button {
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+/* ===== Profile Section ===== */
+#profile {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#profileData {
+  background: #fff;          /* نفس لون البطاقات */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  color: #000;               /* نص أسود */
+  margin-bottom: 20px;       /* مسافة بين البيانات والزر */
+  text-align: left;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.logoutBtn {
+  background-color: #ff4d4d;   /* أحمر واضح للزر */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.logoutBtn:hover {
+  background-color: #e60000;
+}
