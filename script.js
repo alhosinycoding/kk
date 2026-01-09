@@ -3,28 +3,28 @@ const users = [
     username: "يحيى حسين",
     password: "Yehia@2026",
     name: "يحيى حسين",
-    rank: 2,
+    rank: 6,
     group: "الجمعة الساعة 3 العصر"
   },
   {
     username: "مروان حسن",
     password: "Marwan@2026",
     name: "مروان حسن",
-    rank: 3,
+    rank: 8,
     group: "الجمعة الساعة 3 العصر"
   },
   {
     username: "مروان طاهر",
     password: "Taher@2026",
     name: "مروان طاهر",
-    rank: 4,
+    rank: 3,
     group: "الجمعة الساعة 3 العصر"
   },
   {
     username: "سارة محمد",
     password: "Sara@2026",
     name: "سارة محمد",
-    rank: 5,
+    rank: 2,
     group: "الجمعة الساعة 3 العصر"
   },
   {
@@ -38,7 +38,7 @@ const users = [
     username: "رؤي السعدي",
     password: "Roya@2026",
     name: "رؤي السعدي",
-    rank: 6,
+    rank: 1,
     group: "الجمعة الساعة 3 العصر"
   },
   
@@ -46,28 +46,28 @@ const users = [
     username: "ملك وليد",
     password: "Malak@2026",
     name: "ملك وليد",
-    rank: 8,
+    rank: 5,
     group: "الاثنين"
   },
   {
     username: "عبدالله محمد",
     password: "Abdallah@2026",
     name: "عبدالله محمد",
-    rank: 9,
+    rank: 4,
     group: "الجمعة الساعة 3 العصر"
   },
   {
     username: "يحيى احمد",
     password: "YehiaA@2026",
     name: "يحيى احمد",
-    rank: 10,
+    rank: 9,
     group: "الجمعة الساعة 3 العصر"
   },
   {
     username: "بسمله احمد",
     password: "Basmla@2026",
     name: "بسمله احمد",
-    rank: 11,
+    rank: 4,
     group: "الجمعة الساعة 3 العصر"
   }
 ];
