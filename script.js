@@ -185,7 +185,7 @@ function loadExams() {
 
 /* لوحة الصدارة */
 const leaders = [
-  { name: "روئ السغدي", score: 95 },
+  { name: "روئ السعدي", score: 95 },
   { name: "سارة محمد", score: 90 },
   { name: "مروان طاهر ", score: 85 }
 ];
