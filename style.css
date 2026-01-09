@@ -131,21 +131,28 @@ button {
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-/* ===== Profile Section (Final Fix) ===== */
+/* ===== Profile Section ===== */
 #profile {
-  display: none;                 /* مخفي افتراضيًا */
-  justify-content: center;        /* توسيط أفقي */
-  align-items: center;            /* توسيط رأسي */
-  min-height: calc(100vh - 100px);/* ارتفاع الشاشة ناقص المنيو */
-  margin-top: 100px;              /* يمنع التداخل مع المنيو */
+  display: none;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  margin-top: 100px;
   padding: 0 20px;
   direction: rtl;
   box-sizing: border-box;
 }
 
-/* يظهر فقط عند التفعيل */
 #profile.active {
   display: flex;
+}
+
+/* Wrapper للكارد + الزر */
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* مسافة بين الكارد والزر */
+  width: 100%;
 }
 
 /* كارد الحساب */
@@ -162,7 +169,7 @@ button {
   position: relative;
 }
 
-/* عنوان الحساب داخل الكارد */
+/* عنوان الحساب */
 #profileData::before {
   content: "الحساب";
   display: block;
@@ -170,7 +177,6 @@ button {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: var(--text);
 }
 
 /* زر تسجيل الخروج */
@@ -180,13 +186,12 @@ button {
   padding: 12px 25px;
   border-radius: 10px;
   font-size: 16px;
-  margin-top: 20px;
   cursor: pointer;
   transition: background 0.3s;
+  max-width: 400px;
   width: 100%;
 }
 
 .logoutBtn:hover {
   background-color: #e60000;
 }
-
